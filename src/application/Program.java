@@ -14,6 +14,10 @@ public class Program {
 		System.out.println("Rooms to rent");
 		System.out.print("How many rooms will be rented? ");
 		int n = sc.nextInt();
+		while (n <= 0 || n > 10) {
+			System.out.print("The number maximum of room to rent is 10. Try again: ");
+			n = sc.nextInt();
+		}
 		
 		for (int i=0; i<n; i++) {
 			sc.nextLine();
